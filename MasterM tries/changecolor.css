@@ -1,0 +1,102 @@
+html {
+  background-image: url("backgr2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.circle {
+  float:left;
+  background-color: lightgrey;
+  margin: 10px 10px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.circle-small {
+  float:left;
+  background-color: white;
+  box-shadow: 2px 2px 5px black;
+  margin: 17px 5px 5px;
+  height: 10px;
+  width: 10px;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+}
+
+.new-line {
+  clear: left;
+}
+
+.button {
+  margin: 0 10px;
+}
+
+.button:hover {
+  transition: 0.3s;
+  transform: scale(1.02);
+  box-shadow: 1px 1px 2px grey;
+  cursor: pointer;
+}
+
+.buttonCheck {
+  color: green;
+  font-weight: bold;
+  margin: 12px 30px;
+}
+
+.buttonCheck:hover {
+  transition: 0.3s;
+  transform: scale(1.02);
+  box-shadow: 1px 1px 2px grey;
+  cursor: pointer;
+}
+
+.blue {
+  border: 1px solid #000080;
+  background-color: #0000ff;
+  box-shadow: 1px 1px 5px #0000cc;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.red {
+  border: 1px solid #990000;
+  background-color: red;
+  box-shadow: 1px 1px 5px #cc0000;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.yellow {
+  border: 1px solid #ffdb4d;
+  background-color: yellow;
+  box-shadow: 1px 1px 5px #ffcc00;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.green {
+  border: 1px solid #006600;
+  background-color: #00ff00;
+  box-shadow: 1px 1px 5px #009900;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.purple {
+  border: 1px solid #600080;
+  background-color: #bf00ff;
+  box-shadow: 1px 1px 5px #39004d;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.brown {
+  border: 1px solid #261a0d;
+  background-color: #996633;
+  box-shadow: 1px 1px 5px  #604020;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
