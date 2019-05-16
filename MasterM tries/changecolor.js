@@ -1,4 +1,5 @@
 var counterId = 5;
+
 document.getElementById("playerActualColors").disabled = true;
 // TODO tömb az ellenőrzéshez itt csak 0-val feltöltve majd ebbe beletenni a gondolt színeket
 
@@ -16,6 +17,10 @@ function computerColors() {
   }
   document.getElementById("thinkColorButton").disabled = true;
   document.getElementById("playerActualColors").disabled = false;
+  var b = document.getElementsByClassName("buttonPlayerColor");
+  for (var i = 0; i < 7; i++) {
+      b[i].disabled = false;
+  }
 }
 
 function checkPlayerColors() {
@@ -23,14 +28,21 @@ function checkPlayerColors() {
 }
 
 // player colors
-function playerColors() {
+function playerColors(event) {
+  //alert(event.target.id);
   var string = counterId;
   var coloredCircle = document.getElementById(string);
-  coloredCircle.classList.add('yellow');
+
+  coloredCircle.classList.add(event.target.id);
   // var x = document.getElementById(string).classList.contains('red');
   counterId++;
   if (counterId == 9) {
-    document.getElementById("playerActualColors").disabled = true;
+    var b = document.getElementsByClassName("buttonPlayerColor");
+    //document.getElementById("playerActualColors").disabled = true;
+    for (var i = 0; i < 7; i++) {
+        b[i].disabled = true;
+    }
+
   }
 }
 
@@ -48,6 +60,10 @@ function deleteColors() {
   }
   counterId = 5;
   document.getElementById("thinkColorButton").disabled = false;
+  var b = document.getElementsByClassName("buttonPlayerColor");
+  for (var i = 0; i < 7; i++) {
+      b[i].disabled = false;
+  }
 }
 
 function randomColorNumber() {
